@@ -54,7 +54,7 @@ let All_song = [
 },
 {
      name: "TOO LATE 😂",
-     path: "music/rickroll.flac",
+     path: "music/rickroll.mp3",
      img: "img/rickroll.jpg",
      singer: "<MARQUEE>RICK ASTLEY</MARQUEE>"
 }
