@@ -1,0 +1,321 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Century Gothic;
+ }
+
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../faq.jpg);
+    height: 185vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+	 float: right;
+     list-style-type: none;
+     margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	border-radius: 40px;
+	font-size: 18px;
+
+}
+ul li a:hover{
+	background-color: #009688;
+	color: #fff;
+
+}
+ul li.active a{
+	background-color: #009688;
+	color: #fff;
+}
+.logo img{
+	float: left;
+	width: 250px;
+	height: auto;
+}
+.main{
+	max-width: 1400px;
+	margin: auto;
+}
+.title{
+	position: absolute;
+	top: 30%;
+	left:52%;
+	transform: translate(-50%,-50%);
+	
+}
+.title h1{
+	color: crimson;
+    font-size: 45.4px;
+    
+}
+
+.title h3{
+	position: relative;
+	text-align: justify;
+	
+	color: #fff;
+    font-size: 1.6rem;
+	color: lime;
+
+}
+
+section{
+	position: absolute;
+	top: 85%;
+	width: 71.8%;
+	left:14.5%;
+	height: 50vh;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container{
+	width: 90%;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+
+}
+
+.accordion-item{
+	background-color: #283042;
+	border-radius: 40px;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+
+}
+
+.accordion-link{
+	font-size: 1.6rem;
+	color: rgba(255,255,255,.8);
+	text-decoration: none;
+	background-color: #283042;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+
+.accordion-link i{
+	color: #e7d5ff;
+	padding: .5rem;
+}
+
+.accordion-link .fa-caret-down{
+    display: none;
+}
+
+
+
+.answer{
+	max-height: 0;
+	overflow: hidden;
+	position: relative;
+	background-color: #212838;
+	transition: max-height 650ms;
+
+}
+
+.answer::before{
+	content: "";
+	position: absolute;
+	width: .6rem;
+	height: 90%;
+	background-color: #8fc460;
+	top:50%;
+	left: 0;
+	transform: translateY(-50%);
+
+}
+
+.answer p{
+	
+	color: rgba(225,225,225,.6);
+	font-size: 1.4rem;
+	padding: 2rem;
+}
+
+.accordion-item:target .answer{
+	max-height: 20rem;
+
+}
+
+
+.accordion-item:target .accordion-link .fa-caret-up{
+	display: none;
+}
+
+
+.accordion-item:target .accordion-link .fa-caret-down{
+	display: block;
+}
+
+.social {
+	
+	background:  rgba(0,0,0,0.4);
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	box-shadow: 0 4px 8px(rgba(0,0,0,0.3));
+	position: absolute;
+	top: 60.3%;
+	transform: translateY(-50%);
+	right:96.5%;
+	
+
+}
+.social a i{
+	font-size: 32px;
+}
+
+.social a{
+	margin: 12px 0;
+	transition: 500ms;
+}
+
+.social a:hover{
+	transform: scale(1.2);
+}
+
+  .social .fa-facebook{
+
+  	color: #1877f2;
+  }
+
+
+.social .fa-whatsapp{
+	color: #25d366;
+}
+
+.social .fa-twitter{
+	color: #1da1f2;
+}
+
+.social .fa-linkedin{
+	color: #0077b5;
+}
+
+.social .fa-buffer{
+	color: #fff9ea;
+}
+
+.social .fa-reddit{
+	color: #ff4500;
+}
+
+
+footer{
+	position: absolute;
+	background: #111;
+	height: auto;
+	width: 100vw;
+	font-family: "Open Sans";
+	padding-top: 40px;
+	color: #fff;
+
+}
+
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.footer-content h2{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+
+}
+
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 17px;
+
+}
+
+.footer-content span{
+
+	text-transform: uppercase;
+	opacity: .5;
+	font-weight: 200;
+}
+
+
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+
+}
+
+.socials li{
+	margin: 0 10px;
+
+}
+
+.socials a{
+	text-decoration: none;
+	
+
+}
+
+.socials a i{
+	font-size: 1.6rem;
+	transition:  0.1s ease;
+}
+
+.socials a:hover{
+
+	transform: scale(1.6);
+	background-color: white;
+	color : #000;
+}
+
+
+.socials a:hover i{
+      color: #000;
+
+}
+
+.footer-bottom{
+	background: #000;
+	width: 100vw;
+	padding: 15px 0;
+	text-align: center;
+
+}
+
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+

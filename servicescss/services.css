@@ -1,0 +1,331 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: century gothic;
+ }
+
+
+
+ 
+
+header{
+	width: 100%;
+	height: 185vh;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../services.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;   
+}
+
+ul{
+	 float: right;
+     list-style-type: none;
+     margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+
+
+}
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	border-radius: 40px;
+	font-size: 18px;
+
+}
+ul li a:hover{
+	background-color: #009688;
+	color: #fff;
+
+}
+ul li.active a{
+	background-color: #009688;
+	color: #fff;
+}
+.logo img{
+	float: left;
+	width: 250px;
+	height: auto;
+}
+.main{
+	max-width: 1400px;
+	margin: auto;
+
+}
+
+.container{
+	color: #fff;
+    font-size: 30px;
+	position: absolute;
+	top:15%;
+	left: 17%;
+	margin:80px auto 80px auto;
+	text-align: center;
+}
+
+.container h4{
+	color: crimson;
+
+}
+
+
+.container h1::before{
+
+	content: '';
+	position: absolute;
+	top:36%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: crimson;
+	width: 300px;
+	height: 3px;
+}
+
+.container p{
+	
+	color: white;
+	font-size: 20px;
+}
+
+
+
+.boxes{
+	position: absolute;
+
+	top: 175%;
+	left: -8.5%;
+	width: 110%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 300px;
+	grid-gap: 0 15px;
+
+
+}
+
+.box{
+	height: 220%;
+	border-radius: 30px;
+	border: 4px solid lightgray;
+	position: relative;
+	cursor: pointer;
+
+}
+
+.box .inner_box{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	color: lightgray;
+	transition: .3s;
+
+
+}
+
+.inner_box span{
+	background-color: transparent #262626;
+	display: inline-block;
+	width: 100px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 60px;
+}
+
+.inner_box h3{
+	margin-top: 30px;
+	font-size: 25px;
+
+}
+
+.box p{
+	font-size: 18px;
+	color: gray;
+	text-align: justify;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	text-align-last: center;
+	margin-top: 100px;
+	opacity: 0
+}
+
+.box:hover{
+	border-color: crimson;
+
+}
+
+.box:hover .inner_box{
+	margin-top: -120px;
+	color: crimson;
+}
+
+.box:hover p{
+	opacity: 1;
+	margin-top: 0;
+	transition: .4s;
+	transition-delay: .2s;
+
+}
+
+
+.social {
+	background: rgba(0,0,0,0.4);
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	box-shadow: 0 4px 8px(rgba(0,0,0,0.3));
+	position: absolute;
+
+	top: 60.5%;
+	transform: translateY(-50%);
+	right:96.5%;
+
+}
+.social a i{
+	font-size: 32px;
+}
+
+.social a{
+	margin: 12px 0;
+	transition: 500ms;
+}
+
+.social a:hover{
+	transform: scale(1.2);
+}
+
+  .social .fa-facebook{
+
+  	color: #1877f2;
+  }
+
+
+.social .fa-whatsapp{
+	color: #25d366;
+}
+
+.social .fa-twitter{
+	color: #1da1f2;
+}
+
+.social .fa-linkedin{
+	color: #0077b5;
+}
+
+.social .fa-buffer{
+	color: #fff9ea;
+}
+
+.social .fa-reddit{
+	color: #ff4500;
+}
+
+
+
+
+footer{
+	position: absolute;
+
+	background: #111;
+	height: auto;
+	width: 100vw;
+	font-family: "Open Sans";
+	padding-top: 40px;
+	color: #fff;
+
+}
+
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.footer-content h2{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+
+}
+
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 17px;
+
+}
+
+.footer-content span{
+
+	text-transform: uppercase;
+	opacity: .5;
+	font-weight: 200;
+}
+
+
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+
+}
+
+.socials li{
+	margin: 0 10px;
+
+}
+
+.socials a{
+	text-decoration: none;
+	
+
+}
+
+.socials a i{
+	font-size: 1.6rem;
+	transition:  0.1s ease;
+}
+
+.socials a:hover{
+
+	transform: scale(1.6);
+	background-color: white;
+	color : #000;
+}
+
+
+.socials a:hover i{
+      color: #000;
+
+}
+
+.footer-bottom{
+	background: #000;
+	width: 100vw;
+	padding: 15px 0;
+	text-align: center;
+
+}
+
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}

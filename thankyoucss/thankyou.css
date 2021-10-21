@@ -1,0 +1,185 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Century Gothic;
+ }
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../grupwork.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.logo img{
+	float: left;
+	width: 250px;
+	height: auto;
+}
+.main{
+	max-width: 1400px;
+	margin: auto;
+}
+.title{
+	position: absolute;
+	top: 40%;
+	left:55%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	color: #fff;
+    font-size: 55px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+ul{
+	 float: right;
+     list-style-type: none;
+     margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+
+
+}
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	border-radius: 40px;
+	font-size: 18px;
+
+}
+ul li a:hover{
+	background-color: #009688;
+	color: #fff;
+
+}
+.button{
+	position: absolute;
+	top: 63%;
+	left:53.9%;
+	transform: translate(-50%,-50%);
+
+
+}
+
+ .btn{
+ 	border: 2px solid #009688;
+ 	padding:10px 30px;
+ 	background-color: #009688 ;
+ 	color: #fff;
+ 	text-decoration: none;
+ 	transition: 0.6s ease;
+ 	border-radius: 40px;
+ 	font-size: 18px;
+
+ 	}
+
+ 	.btn:hover {
+ 		background-color: transparent ;
+	color: #fff;
+}
+
+footer{
+	position: absolute;
+	background: #111;
+	height: auto;
+	width: 100vw;
+	font-family: "Open Sans";
+	padding-top: 40px;
+	color: #fff;
+
+}
+
+.footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.footer-content h2{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+
+}
+
+.footer-content p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 17px;
+
+}
+
+.footer-content span{
+
+	text-transform: uppercase;
+	opacity: .5;
+	font-weight: 200;
+}
+
+
+.socials{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+
+}
+
+.socials li{
+	margin: 0 10px;
+
+}
+
+.socials a{
+	text-decoration: none;
+	
+
+}
+
+.socials a i{
+	font-size: 1.6rem;
+	transition:  0.1s ease;
+}
+
+.socials a:hover{
+
+	transform: scale(1.6);
+	background-color: white;
+	color : #000;
+}
+
+
+.socials a:hover i{
+      color: #000;
+
+}
+
+.footer-bottom{
+	background: #000;
+	width: 100vw;
+	padding: 15px 0;
+	text-align: center;
+
+}
+
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+
