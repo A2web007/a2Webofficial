@@ -55,7 +55,7 @@ ul li.active a{
 	padding: 0 3rem;
 	text-align: center; 
 }
-h1{
+.title h1{
 	position: absolute;
 	top: 40%;
 	color: #fff;
@@ -84,7 +84,7 @@ h1{
 
  	}
 
- 	.bons:hover {
+ 	.bons:hover a {
  		background-color: #009688;
 	color: #fff;
 }
