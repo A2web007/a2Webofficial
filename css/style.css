@@ -102,7 +102,7 @@ ul li.active a{
 	box-shadow: 0 4px 8px(rgba(0,0,0,0.3));
 	position: absolute;
 	bottom: 36%;
-	left:-200%;
+	left:0.6%;
 transform: translateY(44%);
 	
 	
