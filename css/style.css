@@ -55,7 +55,7 @@ ul li.active a{
 	padding: 0 3rem;
 	text-align: center; 
 }
-.title h1{
+ h1{
 	position: absolute;
 	top: 40%;
 	color: #fff;
@@ -73,7 +73,7 @@ ul li.active a{
 
 }
 
- .bons{
+ .btn {
  	border: 2px solid #009688;
  	padding:10px 30px;
  	color: #fff;
@@ -84,8 +84,8 @@ ul li.active a{
 
  	}
 
- 	.bons:hover a {
- 		background-color: #009688;
+ 	.btn:hover  {
+ 	background-color: #009688;
 	color: #fff;
 }
  
