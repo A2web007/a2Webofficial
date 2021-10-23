@@ -85,7 +85,7 @@ ul li.active a{
 
  	}
 
- 	.btn:hover  {
+ 	.btn:hover a {
  	background-color: #009688;
 	color: #fff;
 }
