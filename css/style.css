@@ -98,9 +98,9 @@ ul li.active a{
 	padding: 16px;
 	box-shadow: 0 4px 8px(rgba(0,0,0,0.3));
 	position: absolute;
-	top: 20%;
-	right:306%;
-	transform: translateY(-57.7%);
+	bottom: -20%;
+	left:-225%;
+	transform: translateY(44%);
 	
 	
 
