@@ -81,11 +81,10 @@ ul li.active a{
  	transition: 0.6s ease;
  	border-radius: 40px;
  	font-size: 18px;
-        background-color: transparent;
 
  	}
 
- 	.btn:hover a {
+.btn:hover {
  	background-color: #009688;
 	color: #fff;
 }
