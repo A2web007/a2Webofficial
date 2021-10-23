@@ -11,6 +11,10 @@ header{
     background-position: center;
 }
 
+body{
+overflow-y: hidden;
+}
+
 ul{
 	 float: right;
      list-style-type: none;
