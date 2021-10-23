@@ -13,6 +13,10 @@ header{
     background-position: center;
 }
 
+body{
+overflow-x: hidden;
+}
+
 ul{
 	 float: right;
      list-style-type: none;
