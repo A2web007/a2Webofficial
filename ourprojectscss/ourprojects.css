@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Century Gothic;
+}
+
+body {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://media.istockphoto.com/photos/black-blank-stationery-set-with-phone-earphone-coffee-on-dark-wood-picture-id945451566?k=20&m=945451566&s=612x612&w=0&h=TrHiYN0Oe6_KzSCCwhLCux2_e72uZ7lICO7K1rMA_0Y=); 
+  height: auto;
+   background-size: cover;
+  background-position: center; 
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 18vh;
+  padding: 1rem 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.logo img{
+  position: absolute;
+  top:3%;
+  left:3%;
+  width: 250px;
+  height: auto;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul li {
+  margin: 0 0.5rem;
+}
+header ul li a {
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+header ul li a:hover {
+  background-color: #009688;
+  color: #fff;
+}
+
+header ul li.active a {
+  background-color: #009688;
+  color: #fff;
+}
+.main {
+  height: auto;
+  /* padding: 4rem 0; */
+  width: 100% !important;
+}
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  color: #ff0000;
+  font-size: 60px;
+}
+.title h3 {
+    margin-top: 1rem;
+  width: 50%;
+  font-size: 1.6rem;
+  color: lime;
+}
+
+.projects-box {
+  margin: 4rem auto;
+  width: 80%;
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.box {
+  grid-column: span 1;
+  margin: 1rem;
+  height: 400px;
+  width: 400px;
+  color: #f2f2f2;
+  background: #282c34;
+  box-shadow: 0 8px 30px 0 rgba(78, 78, 90, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box .imgwrapper {
+  min-height: 320px;
+  max-height: 320px !important;
+  align-items: center;
+  overflow: hidden !important;
+}
+
+.box a img {
+  max-height: 320px !important;
+  transition: all 0.5s ease-in-out;
+  object-fit: cover !important;
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
+}
+.box .imgwrapper:hover img {
+  transform: scale(1.5);
+}
+.box .txts {
+  height: 80px;
+  padding: 1rem;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 17px;
+}
+
+.footer-content span {
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 200;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.socials a i {
+  font-size: 1.6rem;
+  transition: 0.1s ease;
+}
+
+.socials a:hover i,
+a {
+  transform: scale(1.6);
+  color: rgb(255, 255, 255);
+  
+}
+
+
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1100px) {
+  header {
+    height: auto;
+    
+    flex-direction: column;
+  }
+  header .logo {
+    margin: 1rem 0 2rem 0;
+  }
+  header ul {
+    width: 95%;
+    overflow-x: scroll;
+  }
+  header ul::-webkit-scrollbar {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+  .projects-box {
+    margin: 4rem auto;
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
